@@ -33,6 +33,9 @@
 		D3C834182B28727100B060AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834172B28727100B060AC /* LoginViewModel.swift */; };
 		D3C834192B28727100B060AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834172B28727100B060AC /* LoginViewModel.swift */; };
 		D3C8341A2B28727100B060AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834172B28727100B060AC /* LoginViewModel.swift */; };
+		D3C8341D2B28733F00B060AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8341C2B28733F00B060AC /* AppState.swift */; };
+		D3C8341E2B28733F00B060AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8341C2B28733F00B060AC /* AppState.swift */; };
+		D3C8341F2B28733F00B060AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8341C2B28733F00B060AC /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,7 @@
 		D3C8340D2B286F8C00B060AC /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		D3C834132B28722400B060AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D3C834172B28727100B060AC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D3C8341C2B28733F00B060AC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		D3C833C62B276A5F00B060AC /* WeightController */ = {
 			isa = PBXGroup;
 			children = (
+				D3C8341B2B28732200B060AC /* Navigation */,
 				D3C834122B28720C00B060AC /* Login */,
 				D3C834112B286FC400B060AC /* Dependencies */,
 				D3C833F62B2775ED00B060AC /* SupportingFiles */,
@@ -213,6 +218,14 @@
 				D3C834172B28727100B060AC /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D3C8341B2B28732200B060AC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D3C8341C2B28733F00B060AC /* AppState.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +375,7 @@
 				D3C833D12B276A6300B060AC /* Persistence.swift in Sources */,
 				D3C834142B28722400B060AC /* LoginView.swift in Sources */,
 				D3C8340E2B286F8C00B060AC /* KeychainManager.swift in Sources */,
+				D3C8341D2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C833D42B276A6300B060AC /* WeightController.xcdatamodeld in Sources */,
 				D3C834182B28727100B060AC /* LoginViewModel.swift in Sources */,
 				D3C833CA2B276A6000B060AC /* ContentView.swift in Sources */,
@@ -375,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C834192B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C8341E2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834152B28722400B060AC /* LoginView.swift in Sources */,
 				D3C833DE2B276A6300B060AC /* WeightControllerTests.swift in Sources */,
 				D3C8340F2B286F8C00B060AC /* KeychainManager.swift in Sources */,
@@ -386,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C8341A2B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C8341F2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834162B28722400B060AC /* LoginView.swift in Sources */,
 				D3C833EA2B276A6300B060AC /* WeightControllerUITestsLaunchTests.swift in Sources */,
 				D3C833E82B276A6300B060AC /* WeightControllerUITests.swift in Sources */,
