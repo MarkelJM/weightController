@@ -24,6 +24,7 @@
 		D3C834032B27771A00B060AC /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = D3C834022B27771A00B060AC /* FirebaseMessaging */; };
 		D3C834052B27771A00B060AC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D3C834042B27771A00B060AC /* FirebaseStorage */; };
 		D3C834082B2777F200B060AC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3C834072B2777F200B060AC /* KeychainSwift */; };
+		D3C8340C2B286DD600B060AC /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8340B2B286DD600B060AC /* FirebaseAuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D3C833E72B276A6300B060AC /* WeightControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightControllerUITests.swift; sourceTree = "<group>"; };
 		D3C833E92B276A6300B060AC /* WeightControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3C833F72B27761E00B060AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3C8340B2B286DD600B060AC /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		D3C833C62B276A5F00B060AC /* WeightController */ = {
 			isa = PBXGroup;
 			children = (
+				D3C834092B286DB500B060AC /* Firebase */,
 				D3C833F62B2775ED00B060AC /* SupportingFiles */,
 				D3C833C72B276A5F00B060AC /* WeightControllerApp.swift */,
 				D3C833C92B276A6000B060AC /* ContentView.swift */,
@@ -156,6 +159,22 @@
 				D3C833CB2B276A6300B060AC /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D3C834092B286DB500B060AC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D3C8340A2B286DBF00B060AC /* Auth */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		D3C8340A2B286DBF00B060AC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D3C8340B2B286DD600B060AC /* FirebaseAuthManager.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +325,7 @@
 				D3C833D42B276A6300B060AC /* WeightController.xcdatamodeld in Sources */,
 				D3C833CA2B276A6000B060AC /* ContentView.swift in Sources */,
 				D3C833C82B276A5F00B060AC /* WeightControllerApp.swift in Sources */,
+				D3C8340C2B286DD600B060AC /* FirebaseAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
