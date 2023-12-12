@@ -41,7 +41,7 @@ class LoginViewModel: ObservableObject {
             print("Inicio de sesión exitoso con credenciales predeterminadas")
             DispatchQueue.main.async {
                 self.keychainManager.saveToken("default_token")
-                self.appState.currentView = .home
+                //self.appState.currentView = .home
             }
             return
         }
@@ -57,15 +57,13 @@ class LoginViewModel: ObservableObject {
                         self.keychainManager.saveToken(token)
                         print("Token guardado: \(token)")
                     }
-                    self.appState.currentView = .home
+                    //self.appState.currentView = .home
                 }
             }
         }
     }
     
-    func register() {
-        appState.currentView = .codeVerify // Cambia a la vista de verificación de código
-    }
+    
 
 
 

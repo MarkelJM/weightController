@@ -36,6 +36,9 @@
 		D3C8341D2B28733F00B060AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8341C2B28733F00B060AC /* AppState.swift */; };
 		D3C8341E2B28733F00B060AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8341C2B28733F00B060AC /* AppState.swift */; };
 		D3C8341F2B28733F00B060AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8341C2B28733F00B060AC /* AppState.swift */; };
+		D3C834212B2875EB00B060AC /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834202B2875EB00B060AC /* NavigationState.swift */; };
+		D3C834222B2875EB00B060AC /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834202B2875EB00B060AC /* NavigationState.swift */; };
+		D3C834232B2875EB00B060AC /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834202B2875EB00B060AC /* NavigationState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,7 @@
 		D3C834132B28722400B060AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D3C834172B28727100B060AC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D3C8341C2B28733F00B060AC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D3C834202B2875EB00B060AC /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				D3C8341C2B28733F00B060AC /* AppState.swift */,
+				D3C834202B2875EB00B060AC /* NavigationState.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				D3C833CA2B276A6000B060AC /* ContentView.swift in Sources */,
 				D3C833C82B276A5F00B060AC /* WeightControllerApp.swift in Sources */,
 				D3C8340C2B286DD600B060AC /* FirebaseAuthManager.swift in Sources */,
+				D3C834212B2875EB00B060AC /* NavigationState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C834192B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C834222B2875EB00B060AC /* NavigationState.swift in Sources */,
 				D3C8341E2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834152B28722400B060AC /* LoginView.swift in Sources */,
 				D3C833DE2B276A6300B060AC /* WeightControllerTests.swift in Sources */,
@@ -401,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C8341A2B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C834232B2875EB00B060AC /* NavigationState.swift in Sources */,
 				D3C8341F2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834162B28722400B060AC /* LoginView.swift in Sources */,
 				D3C833EA2B276A6300B060AC /* WeightControllerUITestsLaunchTests.swift in Sources */,

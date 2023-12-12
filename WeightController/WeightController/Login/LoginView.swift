@@ -13,11 +13,11 @@ struct LoginView: View {
     @State private var showForgotPassword = false
     //@EnvironmentObject var appState: AppState
     @ObservedObject var viewModel: LoginViewModel
-     /*
+     
     init(appState: AppState) {
         self.viewModel = LoginViewModel(appState: appState)
     }
-    */
+    
     var body: some View {
         ZStack {
 
@@ -35,10 +35,11 @@ struct LoginView: View {
                 Button(action: viewModel.login) {
                     Text("Iniciar")
                 }
-                
+                /*
                 Button("Regístrate") {
                     viewModel.register()
                 }
+                 */
                 
                 Spacer()
             }
