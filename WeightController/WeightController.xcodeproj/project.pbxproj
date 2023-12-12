@@ -27,6 +27,12 @@
 		D3C8340C2B286DD600B060AC /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8340B2B286DD600B060AC /* FirebaseAuthManager.swift */; };
 		D3C8340E2B286F8C00B060AC /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8340D2B286F8C00B060AC /* KeychainManager.swift */; };
 		D3C8340F2B286F8C00B060AC /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8340D2B286F8C00B060AC /* KeychainManager.swift */; };
+		D3C834142B28722400B060AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834132B28722400B060AC /* LoginView.swift */; };
+		D3C834152B28722400B060AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834132B28722400B060AC /* LoginView.swift */; };
+		D3C834162B28722400B060AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834132B28722400B060AC /* LoginView.swift */; };
+		D3C834182B28727100B060AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834172B28727100B060AC /* LoginViewModel.swift */; };
+		D3C834192B28727100B060AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834172B28727100B060AC /* LoginViewModel.swift */; };
+		D3C8341A2B28727100B060AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834172B28727100B060AC /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,8 @@
 		D3C833F72B27761E00B060AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3C8340B2B286DD600B060AC /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		D3C8340D2B286F8C00B060AC /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		D3C834132B28722400B060AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D3C834172B28727100B060AC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +127,8 @@
 		D3C833C62B276A5F00B060AC /* WeightController */ = {
 			isa = PBXGroup;
 			children = (
-				D3C834102B286F9500B060AC /* Keychain */,
-				D3C834092B286DB500B060AC /* Firebase */,
+				D3C834122B28720C00B060AC /* Login */,
+				D3C834112B286FC400B060AC /* Dependencies */,
 				D3C833F62B2775ED00B060AC /* SupportingFiles */,
 				D3C833C72B276A5F00B060AC /* WeightControllerApp.swift */,
 				D3C833C92B276A6000B060AC /* ContentView.swift */,
@@ -187,6 +195,24 @@
 				D3C8340D2B286F8C00B060AC /* KeychainManager.swift */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		D3C834112B286FC400B060AC /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D3C834092B286DB500B060AC /* Firebase */,
+				D3C834102B286F9500B060AC /* Keychain */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		D3C834122B28720C00B060AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D3C834132B28722400B060AC /* LoginView.swift */,
+				D3C834172B28727100B060AC /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +360,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C833D12B276A6300B060AC /* Persistence.swift in Sources */,
+				D3C834142B28722400B060AC /* LoginView.swift in Sources */,
 				D3C8340E2B286F8C00B060AC /* KeychainManager.swift in Sources */,
 				D3C833D42B276A6300B060AC /* WeightController.xcdatamodeld in Sources */,
+				D3C834182B28727100B060AC /* LoginViewModel.swift in Sources */,
 				D3C833CA2B276A6000B060AC /* ContentView.swift in Sources */,
 				D3C833C82B276A5F00B060AC /* WeightControllerApp.swift in Sources */,
 				D3C8340C2B286DD600B060AC /* FirebaseAuthManager.swift in Sources */,
@@ -346,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C834192B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C834152B28722400B060AC /* LoginView.swift in Sources */,
 				D3C833DE2B276A6300B060AC /* WeightControllerTests.swift in Sources */,
 				D3C8340F2B286F8C00B060AC /* KeychainManager.swift in Sources */,
 			);
@@ -355,6 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C8341A2B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C834162B28722400B060AC /* LoginView.swift in Sources */,
 				D3C833EA2B276A6300B060AC /* WeightControllerUITestsLaunchTests.swift in Sources */,
 				D3C833E82B276A6300B060AC /* WeightControllerUITests.swift in Sources */,
 			);
