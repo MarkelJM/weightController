@@ -15,6 +15,11 @@ struct NavigationState: View {
         switch appState.currentView {
         case .login:
             LoginView(appState: appState)
+        case .forgotPassword:
+            ForgotPasswordView().environmentObject(appState)
+        default:
+                EmptyView() // Vista predeterminada si no hay coincidencia
+            
         }
     }
 }

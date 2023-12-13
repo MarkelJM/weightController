@@ -9,8 +9,11 @@ import Foundation
 
 class AppState: ObservableObject {
     @Published var currentView: AppView = .login
+    
+    enum AppView {
+        case login
+        case forgotPassword
+    }
+
 }
 
-enum AppView {
-    case login
-}

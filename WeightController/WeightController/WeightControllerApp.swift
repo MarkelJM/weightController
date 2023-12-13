@@ -30,10 +30,12 @@ struct WeightControllerApp: App {
     
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var appState = AppState()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationState()
+                .environmentObject(appState)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

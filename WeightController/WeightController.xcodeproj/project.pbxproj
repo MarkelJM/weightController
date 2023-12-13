@@ -48,6 +48,9 @@
 		D3C8342F2B29BC5E00B060AC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8342E2B29BC5E00B060AC /* Fonts.swift */; };
 		D3C834302B29BC5E00B060AC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8342E2B29BC5E00B060AC /* Fonts.swift */; };
 		D3C834312B29BC5E00B060AC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8342E2B29BC5E00B060AC /* Fonts.swift */; };
+		D3C834332B29BD4A00B060AC /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834322B29BD4A00B060AC /* ForgotPasswordViewModel.swift */; };
+		D3C834342B29BD4A00B060AC /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834322B29BD4A00B060AC /* ForgotPasswordViewModel.swift */; };
+		D3C834352B29BD4A00B060AC /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834322B29BD4A00B060AC /* ForgotPasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,7 @@
 		D3C834252B29BBD400B060AC /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		D3C8342A2B29BC3E00B060AC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		D3C8342E2B29BC5E00B060AC /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D3C834322B29BD4A00B060AC /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				D3C834252B29BBD400B060AC /* ForgotPasswordView.swift */,
+				D3C834322B29BD4A00B060AC /* ForgotPasswordViewModel.swift */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				D3C833D42B276A6300B060AC /* WeightController.xcdatamodeld in Sources */,
 				D3C834182B28727100B060AC /* LoginViewModel.swift in Sources */,
 				D3C833CA2B276A6000B060AC /* ContentView.swift in Sources */,
+				D3C834332B29BD4A00B060AC /* ForgotPasswordViewModel.swift in Sources */,
 				D3C833C82B276A5F00B060AC /* WeightControllerApp.swift in Sources */,
 				D3C8340C2B286DD600B060AC /* FirebaseAuthManager.swift in Sources */,
 				D3C834212B2875EB00B060AC /* NavigationState.swift in Sources */,
@@ -434,6 +440,7 @@
 				D3C8342C2B29BC3E00B060AC /* Styles.swift in Sources */,
 				D3C8341E2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834152B28722400B060AC /* LoginView.swift in Sources */,
+				D3C834342B29BD4A00B060AC /* ForgotPasswordViewModel.swift in Sources */,
 				D3C833DE2B276A6300B060AC /* WeightControllerTests.swift in Sources */,
 				D3C834302B29BC5E00B060AC /* Fonts.swift in Sources */,
 				D3C8340F2B286F8C00B060AC /* KeychainManager.swift in Sources */,
@@ -450,6 +457,7 @@
 				D3C8342D2B29BC3E00B060AC /* Styles.swift in Sources */,
 				D3C8341F2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834162B28722400B060AC /* LoginView.swift in Sources */,
+				D3C834352B29BD4A00B060AC /* ForgotPasswordViewModel.swift in Sources */,
 				D3C833EA2B276A6300B060AC /* WeightControllerUITestsLaunchTests.swift in Sources */,
 				D3C834312B29BC5E00B060AC /* Fonts.swift in Sources */,
 				D3C833E82B276A6300B060AC /* WeightControllerUITests.swift in Sources */,

@@ -36,7 +36,7 @@ struct ForgotPasswordView: View {
                 Text("Introduce tu correo electrónico y te enviaremos instrucciones para restablecer tu contraseña.")
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
-                    .foregroundColor(.violet5)
+                    .foregroundColor(.black)
                 
                 TextField("Correo electrónico", text: $viewModel.email)
                     .inputFieldStyle()
