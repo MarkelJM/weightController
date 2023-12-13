@@ -39,6 +39,9 @@
 		D3C834212B2875EB00B060AC /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834202B2875EB00B060AC /* NavigationState.swift */; };
 		D3C834222B2875EB00B060AC /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834202B2875EB00B060AC /* NavigationState.swift */; };
 		D3C834232B2875EB00B060AC /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834202B2875EB00B060AC /* NavigationState.swift */; };
+		D3C834262B29BBD400B060AC /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834252B29BBD400B060AC /* ForgotPasswordView.swift */; };
+		D3C834272B29BBD400B060AC /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834252B29BBD400B060AC /* ForgotPasswordView.swift */; };
+		D3C834282B29BBD400B060AC /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834252B29BBD400B060AC /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,7 @@
 		D3C834172B28727100B060AC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D3C8341C2B28733F00B060AC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D3C834202B2875EB00B060AC /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		D3C834252B29BBD400B060AC /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		D3C833C62B276A5F00B060AC /* WeightController */ = {
 			isa = PBXGroup;
 			children = (
+				D3C834292B29BBE900B060AC /* design */,
 				D3C8341B2B28732200B060AC /* Navigation */,
 				D3C834122B28720C00B060AC /* Login */,
 				D3C834112B286FC400B060AC /* Dependencies */,
@@ -218,6 +223,7 @@
 		D3C834122B28720C00B060AC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D3C834242B29BBA800B060AC /* ForgotPassword */,
 				D3C834132B28722400B060AC /* LoginView.swift */,
 				D3C834172B28727100B060AC /* LoginViewModel.swift */,
 			);
@@ -231,6 +237,21 @@
 				D3C834202B2875EB00B060AC /* NavigationState.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D3C834242B29BBA800B060AC /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				D3C834252B29BBD400B060AC /* ForgotPasswordView.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		D3C834292B29BBE900B060AC /* design */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C833D12B276A6300B060AC /* Persistence.swift in Sources */,
+				D3C834262B29BBD400B060AC /* ForgotPasswordView.swift in Sources */,
 				D3C834142B28722400B060AC /* LoginView.swift in Sources */,
 				D3C8340E2B286F8C00B060AC /* KeychainManager.swift in Sources */,
 				D3C8341D2B28733F00B060AC /* AppState.swift in Sources */,
@@ -395,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C834192B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C834272B29BBD400B060AC /* ForgotPasswordView.swift in Sources */,
 				D3C834222B2875EB00B060AC /* NavigationState.swift in Sources */,
 				D3C8341E2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834152B28722400B060AC /* LoginView.swift in Sources */,
@@ -408,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C8341A2B28727100B060AC /* LoginViewModel.swift in Sources */,
+				D3C834282B29BBD400B060AC /* ForgotPasswordView.swift in Sources */,
 				D3C834232B2875EB00B060AC /* NavigationState.swift in Sources */,
 				D3C8341F2B28733F00B060AC /* AppState.swift in Sources */,
 				D3C834162B28722400B060AC /* LoginView.swift in Sources */,
