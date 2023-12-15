@@ -11,7 +11,7 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var showForgotPassword = false
-    //@EnvironmentObject var appState: AppState
+    @EnvironmentObject var appState: AppState
     @ObservedObject var viewModel: LoginViewModel
      
     init(appState: AppState) {
@@ -35,11 +35,11 @@ struct LoginView: View {
                 Button(action: viewModel.login) {
                     Text("Iniciar")
                 }
-                /*
+                
                 Button("Regístrate") {
-                    viewModel.register()
+                    appState.currentView = .registerEmail
                 }
-                 */
+                 
                 
                 Spacer()
             }

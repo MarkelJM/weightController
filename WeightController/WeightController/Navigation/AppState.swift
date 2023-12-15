@@ -13,6 +13,7 @@ class AppState: ObservableObject {
     enum AppView {
         case login
         case forgotPassword
+        case registerEmail
     }
 
 }

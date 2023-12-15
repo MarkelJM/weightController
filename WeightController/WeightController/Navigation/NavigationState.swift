@@ -17,6 +17,8 @@ struct NavigationState: View {
             LoginView(appState: appState)
         case .forgotPassword:
             ForgotPasswordView().environmentObject(appState)
+        case .registerEmail:
+            RegisterView()
         default:
                 EmptyView() // Vista predeterminada si no hay coincidencia
             
