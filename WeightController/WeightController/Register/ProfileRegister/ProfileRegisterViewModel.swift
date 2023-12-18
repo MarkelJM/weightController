@@ -14,8 +14,14 @@ import FirebaseFirestore
 class ProfileRegisterViewModel: ObservableObject {
     @Published var firstName: String = ""
     @Published var lastName: String = ""
-    // ... otros campos del perfil
+    @Published var address: String = ""
+    @Published var postalCode: String = ""
+    @Published var city: String = ""
+    @Published var country: String = ""
+    @Published var weight: Double? = nil
+    @Published var birthDate: Date = Date()
     @Published var profileImage: UIImage? = nil
+    
     @Published var errorMessage: String? = nil
 
     private var firestoreManager = FirestoreManager()
@@ -24,7 +30,13 @@ class ProfileRegisterViewModel: ObservableObject {
         let profile = ProfileInformation(
             firstName: firstName,
             lastName: lastName,
-            // ... otros campos
+            address: address,
+            postalCode: postalCode,
+            city: city,
+            country: country,
+            weight: weight,
+            birthDate: birthDate
+            //profileImage: profileImage
         )
 
         // Primero, subir la imagen si existe
@@ -96,7 +108,7 @@ class ProfileRegisterViewModel: ObservableObject {
     }
 
     private func loadImage(from url: String) {
-        // Aquí debes implementar la carga de la imagen desde la URL
+        // Aquí  implementar la carga de la imagen desde la URL
         // y actualizar `profileImage`
     }
 

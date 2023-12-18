@@ -12,27 +12,32 @@ struct ProfileRegisterView: View {
     @State private var isImagePickerPresented = false
 
     var body: some View {
-        VStack {
-            TextField("Nombre", text: $viewModel.firstName)
-            TextField("Apellido", text: $viewModel.lastName)
-            // ... otros campos de texto
-
-            if let image = viewModel.profileImage {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
+        ScrollView {
+            VStack {
+                TextField("Nombre", text: $viewModel.firstName)
+                TextField("Apellido", text: $viewModel.lastName)
+                TextField("Dirección", text: $viewModel.address)
+                TextField("Código Postal", text: $viewModel.postalCode)
+                TextField("Ciudad", text: $viewModel.city)
+                TextField("País", text: $viewModel.country)
+                DatePicker("Fecha de Nacimiento", selection: $viewModel.birthDate, displayedComponents: .date)
             }
 
-            Button("Seleccionar Imagen") {
-                isImagePickerPresented = true
-            }
-
-            Button("Registrar Perfil") {
-                viewModel.registerProfile()
-            }
-
-            if let errorMessage = viewModel.errorMessage {
-                Text(errorMessage).foregroundColor(.red)
+            VStack {
+                if let image = viewModel.profileImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                }
+                Button("Seleccionar Imagen") {
+                    isImagePickerPresented = true
+                }
+                Button("Registrar Perfil") {
+                    viewModel.registerProfile()
+                }
+                if let errorMessage = viewModel.errorMessage {
+                    Text(errorMessage).foregroundColor(.red)
+                }
             }
         }
         .sheet(isPresented: $isImagePickerPresented) {
@@ -40,6 +45,7 @@ struct ProfileRegisterView: View {
         }
     }
 }
+
 
 
 struct ProfileRegisterView_Previews: PreviewProvider {
