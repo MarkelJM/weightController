@@ -90,6 +90,12 @@
 		D3C834712B3204C700B060AC /* WeightModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834702B3204C700B060AC /* WeightModel+CoreDataProperties.swift */; };
 		D3C834722B3204C700B060AC /* WeightModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834702B3204C700B060AC /* WeightModel+CoreDataProperties.swift */; };
 		D3C834732B3204C700B060AC /* WeightModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834702B3204C700B060AC /* WeightModel+CoreDataProperties.swift */; };
+		D3C834762B344C0C00B060AC /* AddWeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834752B344C0C00B060AC /* AddWeightViewModel.swift */; };
+		D3C834772B344C0C00B060AC /* AddWeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834752B344C0C00B060AC /* AddWeightViewModel.swift */; };
+		D3C834782B344C0C00B060AC /* AddWeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834752B344C0C00B060AC /* AddWeightViewModel.swift */; };
+		D3C8347A2B344D1A00B060AC /* AddWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834792B344D1A00B060AC /* AddWeightView.swift */; };
+		D3C8347B2B344D1A00B060AC /* AddWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834792B344D1A00B060AC /* AddWeightView.swift */; };
+		D3C8347C2B344D1A00B060AC /* AddWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C834792B344D1A00B060AC /* AddWeightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +152,8 @@
 		D3C834682B32008B00B060AC /* WeightModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeightModel.xcdatamodel; sourceTree = "<group>"; };
 		D3C8346C2B3204B300B060AC /* WeightModel+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeightModel+CoreData.swift"; sourceTree = "<group>"; };
 		D3C834702B3204C700B060AC /* WeightModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeightModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D3C834752B344C0C00B060AC /* AddWeightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewModel.swift; sourceTree = "<group>"; };
+		D3C834792B344D1A00B060AC /* AddWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,7 @@
 		D3C833C62B276A5F00B060AC /* WeightController */ = {
 			isa = PBXGroup;
 			children = (
+				D3C834742B344BE600B060AC /* AddWeight */,
 				D3C8345C2B30455C00B060AC /* Tools */,
 				D3C8344F2B2CBB2300B060AC /* Model */,
 				D3C834362B2C659800B060AC /* Register */,
@@ -398,6 +407,15 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		D3C834742B344BE600B060AC /* AddWeight */ = {
+			isa = PBXGroup;
+			children = (
+				D3C834752B344C0C00B060AC /* AddWeightViewModel.swift */,
+				D3C834792B344D1A00B060AC /* AddWeightView.swift */,
+			);
+			path = AddWeight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -549,7 +567,9 @@
 				D3C8342F2B29BC5E00B060AC /* Fonts.swift in Sources */,
 				D3C834142B28722400B060AC /* LoginView.swift in Sources */,
 				D3C8342B2B29BC3E00B060AC /* Styles.swift in Sources */,
+				D3C8347A2B344D1A00B060AC /* AddWeightView.swift in Sources */,
 				D3C834642B32003D00B060AC /* CoreDataManager.swift in Sources */,
+				D3C834762B344C0C00B060AC /* AddWeightViewModel.swift in Sources */,
 				D3C8340E2B286F8C00B060AC /* KeychainManager.swift in Sources */,
 				D3C834592B2CBBD300B060AC /* ProfileRegisterView.swift in Sources */,
 				D3C834712B3204C700B060AC /* WeightModel+CoreDataProperties.swift in Sources */,
@@ -578,6 +598,7 @@
 			files = (
 				D3C834192B28727100B060AC /* LoginViewModel.swift in Sources */,
 				D3C8344D2B2CBABD00B060AC /* FirestoreManager.swift in Sources */,
+				D3C8347B2B344D1A00B060AC /* AddWeightView.swift in Sources */,
 				D3C8346E2B3204B300B060AC /* WeightModel+CoreData.swift in Sources */,
 				D3C834272B29BBD400B060AC /* ForgotPasswordView.swift in Sources */,
 				D3C834222B2875EB00B060AC /* NavigationState.swift in Sources */,
@@ -592,6 +613,7 @@
 				D3C834722B3204C700B060AC /* WeightModel+CoreDataProperties.swift in Sources */,
 				D3C833DE2B276A6300B060AC /* WeightControllerTests.swift in Sources */,
 				D3C834402B2C660E00B060AC /* RegisterView.swift in Sources */,
+				D3C834772B344C0C00B060AC /* AddWeightViewModel.swift in Sources */,
 				D3C834492B2CBA9800B060AC /* ProfileRegisterViewModel.swift in Sources */,
 				D3C834302B29BC5E00B060AC /* Fonts.swift in Sources */,
 				D3C834562B2CBB4600B060AC /* Profile+Firebase.swift in Sources */,
@@ -608,6 +630,7 @@
 			files = (
 				D3C8341A2B28727100B060AC /* LoginViewModel.swift in Sources */,
 				D3C8344E2B2CBABD00B060AC /* FirestoreManager.swift in Sources */,
+				D3C8347C2B344D1A00B060AC /* AddWeightView.swift in Sources */,
 				D3C8346F2B3204B300B060AC /* WeightModel+CoreData.swift in Sources */,
 				D3C834282B29BBD400B060AC /* ForgotPasswordView.swift in Sources */,
 				D3C834232B2875EB00B060AC /* NavigationState.swift in Sources */,
@@ -622,6 +645,7 @@
 				D3C834732B3204C700B060AC /* WeightModel+CoreDataProperties.swift in Sources */,
 				D3C833EA2B276A6300B060AC /* WeightControllerUITestsLaunchTests.swift in Sources */,
 				D3C834412B2C660E00B060AC /* RegisterView.swift in Sources */,
+				D3C834782B344C0C00B060AC /* AddWeightViewModel.swift in Sources */,
 				D3C8344A2B2CBA9800B060AC /* ProfileRegisterViewModel.swift in Sources */,
 				D3C834312B29BC5E00B060AC /* Fonts.swift in Sources */,
 				D3C834572B2CBB4600B060AC /* Profile+Firebase.swift in Sources */,
